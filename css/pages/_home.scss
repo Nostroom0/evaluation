@@ -1,0 +1,52 @@
+// TRENDING 
+
+.container{
+    background: #F4F4F4;
+}
+.articles-trending{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+// NEWS
+.articles-news{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+// FOLLOW 
+.follow-counter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .follow-card{
+        display: flex;
+    }
+}
+.article-recent{
+    display: grid;
+    grid-template-columns: 1fr;
+    .article{
+        margin-bottom: 40px;
+    }
+    .bottom-card{
+        flex-direction: row;
+    }
+}
+.trending-news{
+    overflow: hidden;
+    background: #fff;
+    .slider{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 35px;
+    }
+    .trendings{
+        .image{
+            width: 420px;
+        }
+        .content{
+            background: #fff;
+            width: 80%;
+        }
+    }
+}

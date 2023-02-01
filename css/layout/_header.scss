@@ -1,0 +1,32 @@
+.header{
+    .header-top{
+        height: 46px;
+        line-height: 46px;
+        background: #000;
+        display: none;
+        justify-content: space-between;
+        color: #fff;
+        .col-left{
+            display: flex;
+        }
+    }
+    .header-middle{
+        display: flex;
+        .logo{
+            display: none;
+        }
+    }
+    .header-bottom{
+        height: 67px;
+        background: #FF2143;
+        .header-bottom-content{
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .links{
+            display: none;
+        }
+    }
+}

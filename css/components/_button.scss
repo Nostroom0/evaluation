@@ -1,0 +1,27 @@
+.burger{
+    width: 30px;
+    height: 30px;
+    .burger-menu:before,
+    .burger-menu:after,
+    .burger-menu div {
+        background: #fff;
+        content: "";
+        display: block;
+        height: 4px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+    
+    .burger-menu:hover:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+    
+    .burger-menu:hover:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+    
+    .burger-menu:hover div {
+        transform: scale(0);
+    }
+}

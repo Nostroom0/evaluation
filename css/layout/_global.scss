@@ -1,0 +1,58 @@
+img{
+    display: block;
+    width: 100%;
+}
+.center{
+    padding: 0 15px;
+}
+.article{
+    position: relative;
+    .overlay{
+        padding: 0 0 15px 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .overlay-white{
+        position: absolute;
+        bottom: 0;
+
+    }
+    span{
+        padding: 7px 14px;
+        color: #fff;
+    }
+    .red{
+        background: #ED4141;
+    }
+    .blue{
+        background: #0077B5;
+    }
+    .green{
+        background: #13C600;
+    }
+}
+.bottom-news{
+    .blue{
+        color: #0077B5;
+    }
+    .green{
+        color: #13C600;
+    }
+    .red{
+        color: #ED4141;
+    }
+}
+.white-bg{
+    margin: 50px 0 20px;
+    padding: 30px 20px 20px ;
+    background: #fff;
+}
+.bottom-card{
+    display: flex;
+    img{
+    height: 104px;
+    width: 124px;
+    }
+}
+

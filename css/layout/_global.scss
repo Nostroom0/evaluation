@@ -2,8 +2,14 @@ img{
     display: block;
     width: 100%;
 }
-.center{
-    padding: 0 15px;
+.header-middle{
+    padding: 15px 15px;
+    }
+.logo-end{
+    padding: 30px 15px;
+}
+.main{
+    padding: 50px 15px 70px;
 }
 .article{
     position: relative;
@@ -21,6 +27,7 @@ img{
     span{
         padding: 7px 14px;
         color: #fff;
+        border-radius: 5px;
     }
     .red{
         background: #ED4141;
@@ -30,6 +37,9 @@ img{
     }
     .green{
         background: #13C600;
+    }
+    .purple{
+        background: #8A3AB9;
     }
 }
 .bottom-news{
@@ -48,11 +58,17 @@ img{
     padding: 30px 20px 20px ;
     background: #fff;
 }
-.bottom-card{
-    display: flex;
-    img{
-    height: 104px;
-    width: 124px;
+@media screen and (min-width:720px){
+    .center{
+        margin: 0 auto;
+        width: 520px;
     }
 }
+@media screen and (min-width:800px){
+    .center{
+        margin: 0 auto;
+        width: 700px;
+    }
+}
+
 

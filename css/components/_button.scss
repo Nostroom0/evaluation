@@ -1,13 +1,12 @@
 .burger{
     width: 30px;
-    height: 30px;
     .burger-menu:before,
     .burger-menu:after,
     .burger-menu div {
         background: #fff;
         content: "";
         display: block;
-        height: 4px;
+        height: 3px;
         border-radius: 3px;
         margin: 7px 0;
         transition: 0.5s;

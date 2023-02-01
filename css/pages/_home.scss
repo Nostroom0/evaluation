@@ -3,6 +3,11 @@
 .container{
     background: #F4F4F4;
 }
+.article-content{
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(27,27,27,0) 100%);
+}
 .articles-trending{
     display: grid;
     grid-template-columns: 1fr;
@@ -12,15 +17,62 @@
 .articles-news{
     display: grid;
     grid-template-columns: 1fr;
+    .top-news{
+        grid-area: 1/1/2/3;
+        .links{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    .mid-news{
+        grid-area: 2/1/3/3;
+        padding: 0 15px;
+        margin: 40px 0;
+        .image{
+            overflow: hidden;
+            img{
+                transform: scale(1.0);
+                transition: all .5s ease-in-out ;
+            }
+        }
+        .image:hover img{
+            transform: scale(1.05);
+        }
+    }
+    .bottom-news{
+        grid-area: 3/1/4/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        .bottom-card{
+            img{
+            height: 104px;
+            width: 124px;
+            }
+        }
+    }
 }
 // FOLLOW 
 .follow-counter{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
     .follow-card{
+        padding: 15px;
         display: flex;
+        gap: 20px;
+        border: 1px solid #F4F4F4;
+        .follow-card-content{
+            p{
+                margin: 0;
+            }
+            span{
+                display: block;
+            }
+        }
     }
 }
+// MOST RECENT 
 .article-recent{
     display: grid;
     grid-template-columns: 1fr;
@@ -28,7 +80,21 @@
         margin-bottom: 40px;
     }
     .bottom-card{
+        display: flex;
         flex-direction: row;
+        gap: 20px;
+            img{
+            height: 80px;
+            width: 85px;
+            }
+    }
+}
+.article-popular{
+    .slider{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 35px;
     }
 }
 .trending-news{
@@ -39,6 +105,10 @@
         justify-content: space-around;
         flex-direction: row;
         gap: 35px;
+        .popular{
+            display: flex;
+            flex-direction: column;
+        }
     }
     .trendings{
         .image{
@@ -47,6 +117,25 @@
         .content{
             background: #fff;
             width: 80%;
+        }
+    }
+}
+
+@media  screen and (min-width: 600px) {
+    .articles-trending{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        .article:nth-of-type(1){
+            grid-area: 1/1/3/3;
+        }
+    }
+}
+@media screen and (min-width: 800px){
+    .bottom-news{
+        grid-template-columns: 1fr 1fr;
+        .bottom-card{
+            display: flex;
         }
     }
 }

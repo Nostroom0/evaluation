@@ -1,1 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+// TRENDING 
+.articles-trending, .article{
+    span{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 10px;
+        text-transform: uppercase;
+    }
+    a{ 
+        font-family: 'Barlow', sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 30px;
+        color: #c2c2c2;
+    }
+}
+// NEWS 
+.articles-news{
+    .top-news{
+        h3{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+            font-size: 31px;
+            line-height: 31px;
+            color: #051441;
+        }
+        a{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: none;
+        }
+        .red-link{
+            color: #ff2143;
+        }
+        .link{
+            color: #051441;
+            
+        }
+    }
+}
+// FOLLOW
+.follow-counter{
+    .follow-card-content{
+        font-family: 'Roboto', sans-serif;
+        span{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #232323;
+        }
+        p{
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 11px;
+            color: #506172;
+        }
+    }
+}

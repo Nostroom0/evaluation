@@ -1,30 +1,47 @@
 .header{
+    // TOP 
     .header-top{
+        height: 45px;
         display: none;
         background: #000;
         color: #fff;
         .header-top-flex{
+            height: 100%;
             padding: 0 15px;
-            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .col-left{
             display: flex;
+            .bolt{
+                i{
+                    color: #FF2143;
+                    margin-right: 10px;
+                }
+            }
+            .hidden{
+                display: none;
+            }
         }
     }
+    // MIDDLE 
     .header-middle{
         display: flex;
+        align-items: center;
+        gap: 20px;
         .logo{
             display: none;
         }
     }
+    // BOTTOM 
     .header-bottom{
         position: relative;
         z-index: 11;
-        padding: 0 15px;
+        padding: 20px 0;
         background: #FF2143;
         .header-bottom-content{
             position: relative;
-            height: 67px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -46,7 +63,6 @@
             justify-content: flex-end;
             gap: 20px;
             transition: all .4s ease-in-out;
-            
             .link{
                 margin-left: 25px;
             }
@@ -56,11 +72,48 @@
             height: 200px;
             display: flex;
         }
+        .links-desktop{
+            display: none;
+            .link{
+                text-transform: uppercase;
+                padding: 0 25px;
+                a{
+                    color: #fff;
+                }
+            }
+            .link:not(.link:last-child){
+                border-right: 1px solid #fff;
+                
+                
+                
+            }
+        }
     }
 }
 @media screen and (min-width: 600px){
+    // TOP 
     .header-top{
-        display: block;
-        
+        display: block !important;
+    }
+}
+@media screen and (min-width:800px){
+    // MIDDLE 
+    .header-middle{
+        .logo{
+            width: 30%;
+            display: block !important;
+        }
+    }
+    // BOTTOM 
+    .header-bottom{
+        .links-desktop{
+            display: flex !important;
+        }
+        .logo{
+            display: none;
+        }
+        .burger-menu{
+            display: none;
+        }
     }
 }

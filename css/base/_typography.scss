@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
 
+a{
+    text-decoration: none;
+}
+h4{
+    margin: 0 0 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.bottom-news-content{
+    a{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+}
+// HEADER 
+.bolt, .phone{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #cdcfd8;
+}
+.links-desktop{
+    .link a{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
 // TRENDING 
 .articles-trending, .article{
     span{
@@ -15,7 +51,6 @@
         font-size: 15px;
         line-height: 20px;
         color: #fff;
-        text-decoration: none;
     }
     p{
         font-family: 'Roboto', sans-serif;
@@ -36,11 +71,7 @@
             color: #051441;
         }
         a{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            font-size: 16px;
             line-height: 24px;
-            text-decoration: none;
         }
         .red-link{
             color: #ff2143;
@@ -49,6 +80,11 @@
             color: #051441;
             
         }
+    }
+}
+.article-popular{
+    a{
+        color: #051441;
     }
 }
 // FOLLOW
@@ -69,3 +105,36 @@
         }
     }
 }
+.trendings a{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #051441;
+}
+// FOOTER 
+.footer{
+    a{
+        color: #fff;
+    }
+    .footer-contact{
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: #9fa6bd;
+        }
+    }
+}
+.bottom-news-content{
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #707b8e;
+        
+    }
+}
+

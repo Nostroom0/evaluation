@@ -1,3 +1,7 @@
+body{
+    background: #F4F4F4;
+}
+
 img{
     display: block;
     width: 100%;
@@ -12,7 +16,9 @@ img{
     padding: 50px 15px 70px;
 }
 .article{
-    position: relative;
+    .image{
+        position: relative;
+    }
     .overlay{
         padding: 0 0 15px 5px;
         position: absolute;
@@ -55,10 +61,16 @@ img{
 }
 .white-bg{
     margin: 50px 0 20px;
-    padding: 30px 20px 20px ;
+    padding: 30px 20px 20px;
     background: #fff;
 }
-@media screen and (min-width:720px){
+.trending-news{
+    padding: 15px;
+    .slider{
+        padding: 20px;
+    }
+}
+@media screen and (min-width:600px){
     .center{
         margin: 0 auto;
         width: 520px;
@@ -66,8 +78,17 @@ img{
 }
 @media screen and (min-width:800px){
     .center{
-        margin: 0 auto;
         width: 700px;
+    }
+}
+@media screen and (min-width:1000px){
+    .center{
+        width: 930px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .center{
+        width: 1150px;
     }
 }
 

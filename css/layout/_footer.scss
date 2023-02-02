@@ -4,7 +4,6 @@
     padding: 100px 15px 40px;
     .footer-content{
         display: grid;
-        grid-template-columns: 1fr;
         gap: 40px;
     }
     .logo-footer{
@@ -21,10 +20,26 @@
                 }
         }
     }
+    
 }
 
-@media screen and (min-width:720px){
+@media screen and (min-width:600px){
     .footer-content>*{
         width: 60%;
+    }
+}
+@media screen and (min-width:800px){
+    .footer-content>*{
+        width: 100%;
+    }
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+@media screen and (min-width:1000px){
+    .footer-content{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

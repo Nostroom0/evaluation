@@ -1,0 +1,63 @@
+.about{
+    .about-blank-area{
+        padding: 50px 20px 100px;
+    }
+    .about-blank-area, .about-red-inner-area, .team{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .about-red-inner-area{
+        padding: 0 20px;
+    }
+    .team{
+        padding: 120px 20px 100px;
+    }
+    .about-red-area{
+        padding: 100px 0;
+        background: url('../../img/gallery/section_bg02.jpg');
+    }
+    .profile-name{
+        padding: 30px;
+        background: #fff;
+        h3{
+            margin-top: 0;
+        }
+    }
+    @media screen and (min-width:800px){
+        .about-red-inner-area, .team{
+            width: 90%;
+        }
+        .about-red-inner-area{
+            padding: 0 60px;
+        }
+        .team{
+            padding: 120px 60px 100px;
+        }
+        .profile-photos-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+    }
+    @media screen and (min-width:1000px){
+        .about-red-inner-area, .team{
+            width: 90%;
+        }
+        .about-red-area{
+            .about-red-inner-area{
+                display: flex;
+                .top-services{
+                    width: 50%;
+                }
+                .about-red-inner-area>div{
+                    flex: 1;
+                }
+            }
+        }
+        .profile-photos-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+    }
+}

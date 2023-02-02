@@ -1,0 +1,61 @@
+.contact{
+    .map{
+        display: none;
+        overflow: hidden;
+        iframe{
+            width: 100%;
+        }
+    }
+    .form{
+        .form-master, .row{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            textarea, input{
+                padding: 20px;
+                width: 100%;
+                background: transparent;
+                border: 1px solid #898A8C;
+            }
+            button{
+                padding: 18px 45px;
+                border: 1px solid #FF2143;
+                color: #FF2143;
+                transition: all .3s ease-in-out;
+                text-transform: uppercase;
+            }
+            button:hover{
+                color: #fff;
+                background: #FF2143;
+            }
+        }
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .contact{
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            h3, p{
+                margin: 0;
+            }
+        }
+    
+    }
+
+    @media screen and (min-width: 600px){
+        .map{
+            display: block;
+        }
+        .form-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            form{
+                grid-area: 1/1/2/3;
+            }
+        }
+    }
+}

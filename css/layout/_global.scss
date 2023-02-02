@@ -70,20 +70,21 @@ img{
         padding: 20px;
     }
 }
-@media screen and (min-width:600px){
-    .center{
-        margin: 0 auto;
-        width: 520px;
-    }
+.center{
+    margin: 0 auto;
+    width: 90%;
 }
-@media screen and (min-width:800px){
-    .center{
-        width: 700px;
+.category, .latest-news{
+    .article-recent{
+        display: none;
+        padding: 0 61px;
     }
 }
 @media screen and (min-width:1000px){
-    .center{
-        width: 930px;
+    .category, .latest-news{
+        .article-recent{
+        display: block;
+        }
     }
 }
 @media screen and (min-width: 1200px){

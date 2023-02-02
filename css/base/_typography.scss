@@ -66,11 +66,14 @@ h4{
         h3{
             font-family: 'Barlow', sans-serif;
             font-weight: 700;
-            font-size: 31px;
-            line-height: 31px;
+            font-size: 40px;
+            line-height: 40px;
             color: #051441;
         }
         a{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
             line-height: 24px;
         }
         .red-link{
@@ -79,6 +82,31 @@ h4{
         .link{
             color: #051441;
             
+        }
+    }
+    .mid-news{
+        h3{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            a{
+                color: #262424;
+            }
+        }
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #707b8e;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #000;
         }
     }
 }
@@ -137,4 +165,82 @@ h4{
         
     }
 }
-
+// LATEST NEWS
+.latest-news{
+    h3{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #051441;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: #707b8e;
+    }
+}
+// CONTACT 
+.contact{
+    h2{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+        color: #051441;
+    }
+    button{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    h3{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #2a2a2a;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #8a8a8a;
+    }
+}
+// ABOUT
+.about{
+    .about-blank-area{
+        h4{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            color: #000a2d;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            color: #464d65;
+        }
+    }
+    .about-red-area{
+        span, h2, p{
+            color: #fff;
+        }
+        span{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: uppercase;
+        }
+    }
+    
+}

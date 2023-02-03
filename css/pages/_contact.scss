@@ -7,6 +7,9 @@
         }
     }
     .form{
+        form{
+            margin-bottom: 100px;
+        }
         .form-master, .row{
             display: flex;
             flex-direction: column;
@@ -16,6 +19,20 @@
                 width: 100%;
                 background: transparent;
                 border: 1px solid #898A8C;
+            }
+            input:focus::placeholder{
+                color: transparent;
+            }
+            textarea:focus::placeholder{
+                color: transparent;
+            }
+            textarea:focus{
+                outline: none;
+                border: 2px solid #FF2143;
+            }
+            input:focus{
+                outline: none;
+                border: 2px solid #FF2143;
             }
             button{
                 cursor: pointer;

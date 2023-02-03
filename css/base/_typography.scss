@@ -20,19 +20,14 @@ h4{
     }
 }
 // HEADER 
-.bolt, .phone{
-    text-transform: uppercase;
+.header-top{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    color: #cdcfd8;
 }
-.hidden{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+.bolt, .phone, .hidden{
+    text-transform: uppercase;
     color: #cdcfd8;
 }
 .links-desktop{
@@ -156,13 +151,23 @@ h4{
         }
     }
 }
-.trendings a{
+// TRENDING NEWS
+.trending-news{
     font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    color: #051441;
+    h3{
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 31px;
+        color: #051441;
+    }
+    a{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #051441;
+    }
 }
+
 // FOOTER 
 .footer{
     a{
@@ -247,13 +252,45 @@ h4{
     .about-red-area{
         span, h2, p{
             color: #fff;
+            font-family: 'Barlow', sans-serif;
+        }
+        p:nth-of-type(1), span{
+            font-weight: 500;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 31px;
+            line-height: 37px;
         }
         span{
-            font-family: 'Barlow', sans-serif;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: uppercase;
+        }
+        p:nth-of-type(1){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        p+p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+    .team-members{
+        font-family: 'Barlow', sans-serif;
+        span{
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
             text-transform: uppercase;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 31px;
+            line-height: 37px;
+            color: #051441;
         }
     }
     
@@ -267,6 +304,19 @@ h4{
                 line-height: 39px;
             }
             
+        }
+    }
+}
+@media screen and (min-width: 800px){
+    .about{
+        .team-members{
+            font-family: 'Barlow', sans-serif;
+            h2{
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 60px;
+                color: #051441;
+            }
         }
     }
 }

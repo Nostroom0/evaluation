@@ -1,4 +1,21 @@
 .about{
+    .team-members, .top-services{
+        span{
+            color: #FF2143;
+            margin-top: 0;
+            position: relative;
+            padding-left: 100px;
+        }
+        span::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: block;
+            width: 70px;
+            border-bottom: 2px solid #FF2143;
+        }
+    }
     .about-blank-area{
         margin: 0 auto;
         width: 90%;
@@ -19,6 +36,10 @@
             }
         }
     }
+    .about-red-area{
+        padding: 100px 50px;
+        background: url('/img/gallery/section_bg02.jpg');
+    }
     .about-red-inner-area, .team{
         margin: 0 auto;
         width: 90%;
@@ -27,20 +48,9 @@
         padding: 0 20px;
     }
     .top-services{
-        span{
-            position: relative;
-            padding-left: 100px;
-        }
-        span::before{
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            display: block;
-            width: 70px;
-            border-bottom: 2px solid #fff;
-        }
+        padding: 40px 0 80px;
         button{
+            margin-top: 25px;
             cursor: pointer;
             padding: 18px 45px;
             background: #000;
@@ -56,9 +66,8 @@
     .team{
         padding: 120px 20px 100px;
     }
-    .about-red-area{
-        padding: 100px 0;
-        background: url('../../img/gallery/section_bg02.jpg');
+    .team-members{
+        display: none;
     }
     .profile-name{
         padding: 30px;
@@ -131,6 +140,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
+        }
+    }
+    @media screen and (min-width:1200px){
+        .team-members{
+            display: block;
         }
     }
 }

@@ -121,6 +121,10 @@ a:hover{
         transform: scale(1.05);
     }
 }
+// PUB
+.pub{
+    cursor: pointer;
+}
 @media screen and (min-width:1000px){
     .category, .latest-news{
         .article-recent{

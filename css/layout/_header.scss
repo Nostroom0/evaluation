@@ -1,4 +1,6 @@
 .header{
+    position: relative;
+    overflow: hidden;
     // TOP 
     .header-top{
         height: 45px;
@@ -15,6 +17,9 @@
         .col-left{
             display: flex;
             .bolt{
+                padding-right: 20px;
+                margin-right: 20px;
+                border-right: 1px solid #cdcfd8;
                 i{
                     color: #FF2143;
                     margin-right: 10px;
@@ -37,55 +42,47 @@
     // BOTTOM 
     .header-bottom{
         position: relative;
-        z-index: 11;
-        padding: 20px 0;
+        overflow: hidden;
+        z-index: 20;
+        height: 70px;
         background: #FF2143;
         .header-bottom-content{
-            position: relative;
+            overflow: hidden;
+            height: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
-        .links{
-            gap: 50px 20px 50px;
-            background: #fff;
-            height: 0;
-            width: 100%;
-            position: absolute;
-            top: 67px;
-            left: 0;
-            right: 15px;
-            z-index: 10;
-            display: none;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
-            gap: 20px;
-            transition: all .4s ease-in-out;
-            .link{
-                margin-left: 25px;
-            }
-        }
-        .burger:hover .links{
-            transition: all .4s ease-in-out .4s;
-            height: 200px;
-            display: flex;
-        }
         .links-desktop{
             display: none;
-            .link{
-                text-transform: uppercase;
-                padding: 0 25px;
-                a{
-                    color: #fff;
+            
+        }
+        .header-bottom-socials{
+            display: none;
+            padding: 0 20px;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            .socials{
+                display: flex;
+                gap: 20px;
+                color: #fff;
+                .social-icon{
+                    cursor: pointer;
+                    i{
+                        transform: rotateY(0deg);
+                        transition: .4s all ease-in-out;
+                    }
+                }
+                .social-icon:hover i{
+                    transform: rotateY(180deg);
                 }
             }
-            .link:not(.link:last-child){
-                border-right: 1px solid #fff;
-                
-                
-                
+            .search-icon{
+                cursor: pointer;
+                border-left: 1px solid #fff;
+                padding-left: 20px;
+                color: #fff;
             }
         }
     }
@@ -108,6 +105,16 @@
     .header-bottom{
         .links-desktop{
             display: flex !important;
+            .link{
+                text-transform: uppercase;
+                padding: 0 25px;
+                a{
+                    color: #fff;
+                }
+            }
+            .link:not(.link:last-child){
+                border-right: 1px solid #fff;
+            }
         }
         .logo{
             display: none;
@@ -116,4 +123,31 @@
             display: none;
         }
     }
+}
+@media screen and (min-width:1000px){
+    .header{
+        // TOP 
+        .header-top{
+            .col-left{
+                display: flex;
+                align-items: center;
+
+                .bolt{
+                    i{
+                    color: #FF2143;
+                    margin-right: 10px;
+                    }
+                }
+                .hidden{
+                    display: block;
+                }
+            }
+        }
+        .header-bottom{
+            .header-bottom-socials{
+                display: block;
+            }
+        }
+    }
+    
 }

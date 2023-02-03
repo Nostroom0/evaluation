@@ -15,20 +15,48 @@ img{
 .main{
     padding: 50px 15px 70px;
 }
+.articles-news {
+    h3, a{
+        color: rgb(44, 42, 42);
+        transition: all .3s ease-in-out;
+    }
+    a:hover{
+        color: #ED4141;
+    }
+    h3 a:hover{
+        color: #ED4141;
+    }
+}
+a{
+    color: rgb(44, 42, 42);
+    transition: all .3s ease-in-out;
+}
+a:hover{
+    color: #ED4141;
+}
 .article{
     .image{
         position: relative;
+        img{
+            border-radius: 10px;
+        }
     }
     .overlay{
-        padding: 0 0 15px 5px;
+        padding: 5px 25px 25px 25px;
         position: absolute;
         bottom: 0;
         left: 0;
+        h2{
+            margin: 10px 0 0;
+        }
+        p{
+            margin: 0;
+        }
     }
     .overlay-white{
         position: absolute;
         bottom: 0;
-
+        border-top-right-radius: 10px;
     }
     span{
         padding: 7px 14px;
@@ -63,6 +91,7 @@ img{
     margin: 50px 0 20px;
     padding: 30px 20px 20px;
     background: #fff;
+    border-radius: 10px;
 }
 .trending-news{
     padding: 15px;
@@ -80,6 +109,18 @@ img{
         padding: 0 61px;
     }
 }
+.mid-news, .profile-photo{
+    .image{
+        overflow: hidden;
+        img{
+            transform: scale(1.0);
+            transition: all .5s ease-in-out ;
+        }
+    }
+    .image:hover img{
+        transform: scale(1.05);
+    }
+}
 @media screen and (min-width:1000px){
     .category, .latest-news{
         .article-recent{
@@ -89,7 +130,7 @@ img{
 }
 @media screen and (min-width: 1200px){
     .center{
-        width: 1150px;
+        width: 1200px;
     }
 }
 

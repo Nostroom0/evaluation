@@ -1,13 +1,57 @@
 .about{
     .about-blank-area{
-        padding: 50px 20px 100px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 50px 0 100px;
+        .mission, .our-vision{
+            h4{
+                position: relative;
+                padding-left: 100px;
+            }
+            h4::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                display: block;
+                width: 70px;
+                border-bottom: 2px solid #FF2143;
+            }
+        }
     }
-    .about-blank-area, .about-red-inner-area, .team{
+    .about-red-inner-area, .team{
         margin: 0 auto;
         width: 90%;
     }
     .about-red-inner-area{
         padding: 0 20px;
+    }
+    .top-services{
+        span{
+            position: relative;
+            padding-left: 100px;
+        }
+        span::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: block;
+            width: 70px;
+            border-bottom: 2px solid #fff;
+        }
+        button{
+            cursor: pointer;
+            padding: 18px 45px;
+            background: #000;
+            color: #FF2143;
+            transition: all .3s ease-in-out;
+            text-transform: uppercase;
+        }
+        button:hover{
+            color: #FF2143;
+            background: #fff;
+        }
     }
     .team{
         padding: 120px 20px 100px;
@@ -19,8 +63,20 @@
     .profile-name{
         padding: 30px;
         background: #fff;
-        h3{
+        span{
+            color: #FF2143;
             margin-top: 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        span::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: block;
+            width: 30px;
+            border-bottom: 2px solid #FF2143;
         }
     }
     @media screen and (min-width:800px){
@@ -40,14 +96,31 @@
         }
     }
     @media screen and (min-width:1000px){
+        .about-blank-area{
+            margin: 0;
+            width: 70%;
+        }
         .about-red-inner-area, .team{
             width: 90%;
         }
         .about-red-area{
             .about-red-inner-area{
                 display: flex;
+                gap: 30px;
                 .top-services{
                     width: 50%;
+                    button{
+                        padding: 18px 45px;
+                        background: #000;
+                        border: 1px solid #FF2143;
+                        color: #FF2143;
+                        transition: all .3s ease-in-out;
+                        text-transform: uppercase;
+                    }
+                    button:hover{
+                        color: #FF2143;
+                        background: #fff;
+                    }
                 }
                 .about-red-inner-area>div{
                     flex: 1;

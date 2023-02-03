@@ -28,6 +28,13 @@ h4{
     line-height: 14px;
     color: #cdcfd8;
 }
+.hidden{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #cdcfd8;
+}
 .links-desktop{
     .link a{
         font-family: 'Roboto', sans-serif;
@@ -109,6 +116,22 @@ h4{
             color: #000;
         }
     }
+    .bottom-news-content{
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 11px;
+            text-transform: uppercase;
+        }
+        a{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000a2d;
+        }
+    }
 }
 .article-popular{
     a{
@@ -155,18 +178,9 @@ h4{
         }
     }
 }
-.bottom-news-content{
-    p{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 12px;
-        color: #707b8e;
-        
-    }
-}
+
 // LATEST NEWS
-.latest-news{
+.latest-news, .bottom-news-content{
     h3{
         font-family: 'Barlow', sans-serif;
         font-weight: 700;
@@ -243,4 +257,33 @@ h4{
         }
     }
     
+}
+@media screen and (min-width: 600px){
+    // TRENDING 
+    .articles-trending{
+        .article:nth-of-type(1){
+            a{ 
+                font-size: 30px;
+                line-height: 39px;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    // TRENDING 
+    .articles-trending{
+        .article:nth-of-type(1){
+            a{ 
+                font-size: 40px;
+                line-height: 52px;
+            }
+        }
+        .article:nth-of-type(2), .article:nth-of-type(3){
+            a{ 
+                font-size: 24px;
+                line-height: 31px;
+            }
+        }
+    }
 }
